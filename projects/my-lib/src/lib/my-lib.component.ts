@@ -15,6 +15,7 @@ export class MyLibComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log('not empty');
   }
 
 }

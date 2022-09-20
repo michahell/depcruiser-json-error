@@ -1,20 +1,6 @@
 /** @type {import('dependency-cruiser').IConfiguration} */
 module.exports = {
   forbidden: [
-    /* rules from the 'recommended' preset: */
-    /*
-    {
-      name: 'no-circular',
-      severity: 'warn',
-      comment:
-        'This dependency is part of a circular relationship. You might want to revise ' +
-        'your solution (i.e. use dependency inversion, make sure the modules have a single responsibility) ',
-      from: {},
-      to: {
-        circular: true
-      }
-    },
-     */
     {
       name: 'no-orphans',
       comment:
@@ -98,7 +84,7 @@ module.exports = {
         "This module depends on a module that cannot be found ('resolved to disk'). If it's an npm " +
         'module: add it to your package.json. In all other cases you likely already know what to do.',
       severity: 'error',
-      from: { pathNot: ['src/test.ts', '@apollo/client'] },
+      from: { },
       to: {
         couldNotResolve: true,
       },
@@ -130,7 +116,7 @@ module.exports = {
       severity: 'error',
       from: {},
       to: {
-        path: '\\.(spec)\\.(js|mjs|cjs|ts|ls|coffee|litcoffee|coffee\\.md)$',
+        path: '\\.(spec|test)\\.(js|mjs|cjs|ts|ls|coffee|litcoffee|coffee\\.md)$',
       },
     },
     {
@@ -171,17 +157,18 @@ module.exports = {
         'other cases - maybe not so much. If the use of a peer dependency is intentional ' +
         'add an exception to your dependency-cruiser configuration.',
       severity: 'warn',
-      from: { pathNot: 'components/' },
+      from: { },
       to: {
         dependencyTypes: ['npm-peer'],
       },
     },
+
     /* custom KvK rules */
     {
       name: 'cross-component-imports',
       comment: 'do not import dependencies from the main project into the components project',
       severity: 'error',
-      from: { path: 'components/src/lib' },
+      from: { path: 'projects/' },
       to: { path: 'src/app' },
     },
     {

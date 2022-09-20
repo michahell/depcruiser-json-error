@@ -1,5 +1,4 @@
 module.exports = {
-  ignorePatterns: ['projects/**/*'],
   overrides: [
     {
       files: ['*.ts'],
@@ -14,22 +13,6 @@ module.exports = {
         'plugin:@angular-eslint/template/process-inline-templates',
       ],
       rules: {
-        '@angular-eslint/component-selector': [
-          'error',
-          {
-            prefix: 'dwp',
-            style: 'kebab-case',
-            type: 'element',
-          },
-        ],
-        '@angular-eslint/directive-selector': [
-          'error',
-          {
-            prefix: 'dwp',
-            style: 'camelCase',
-            type: 'attribute',
-          },
-        ],
         'rxjs/no-cyclic-action': 'error',
         'rxjs/no-subclass': 'error',
         'rxjs/no-subject-value': 'error',
