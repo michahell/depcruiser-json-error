@@ -1,0 +1,137 @@
+[
+  {
+    "type": "dependency",
+    "from": "projects/my-lib/karma.conf.cjs",
+    "to": "node_modules/karma-chrome-launcher/index.js",
+    "rule": {
+      "severity": "error",
+      "name": "no-non-package-json"
+    }
+  },
+  {
+    "type": "dependency",
+    "from": "projects/my-lib/karma.conf.cjs",
+    "to": "node_modules/karma-coverage/lib/index.js",
+    "rule": {
+      "severity": "error",
+      "name": "no-non-package-json"
+    }
+  },
+  {
+    "type": "dependency",
+    "from": "projects/my-lib/karma.conf.cjs",
+    "to": "node_modules/karma-jasmine-html-reporter/src/index.js",
+    "rule": {
+      "severity": "error",
+      "name": "no-non-package-json"
+    }
+  },
+  {
+    "type": "dependency",
+    "from": "projects/my-lib/karma.conf.cjs",
+    "to": "node_modules/karma-jasmine/lib/index.js",
+    "rule": {
+      "severity": "error",
+      "name": "no-non-package-json"
+    }
+  },
+  {
+    "type": "dependency",
+    "from": "projects/my-lib/src/test.ts",
+    "to": "node_modules/@angular/platform-browser-dynamic/fesm2015/testing.mjs",
+    "rule": {
+      "severity": "error",
+      "name": "no-non-package-json"
+    }
+  },
+  {
+    "type": "dependency",
+    "from": "projects/my-lib/src/test.ts",
+    "to": "node_modules/zone.js/bundles/zone-testing.umd.js",
+    "rule": {
+      "severity": "error",
+      "name": "no-non-package-json"
+    }
+  },
+  {
+    "type": "dependency",
+    "from": "projects/my-lib/src/test.ts",
+    "to": "node_modules/zone.js/bundles/zone.umd.js",
+    "rule": {
+      "severity": "error",
+      "name": "no-non-package-json"
+    }
+  },
+  {
+    "type": "dependency",
+    "from": "projects/my-lib/karma.conf.cjs",
+    "to": "@angular-devkit/build-angular/plugins/karma",
+    "rule": {
+      "severity": "error",
+      "name": "not-to-unresolvable"
+    }
+  },
+  {
+    "type": "module",
+    "from": "src/environments/environment.prod.ts",
+    "to": "src/environments/environment.prod.ts",
+    "rule": {
+      "severity": "warn",
+      "name": "no-orphans"
+    }
+  },
+  {
+    "type": "dependency",
+    "from": "projects/my-lib/src/lib/my-lib.component.spec.ts",
+    "to": "node_modules/@angular/core/fesm2015/testing.mjs",
+    "rule": {
+      "severity": "warn",
+      "name": "peer-deps-used"
+    }
+  },
+  {
+    "type": "dependency",
+    "from": "projects/my-lib/src/lib/my-lib.component.ts",
+    "to": "node_modules/@angular/core/fesm2015/core.mjs",
+    "rule": {
+      "severity": "warn",
+      "name": "peer-deps-used"
+    }
+  },
+  {
+    "type": "dependency",
+    "from": "projects/my-lib/src/lib/my-lib.module.ts",
+    "to": "node_modules/@angular/core/fesm2015/core.mjs",
+    "rule": {
+      "severity": "warn",
+      "name": "peer-deps-used"
+    }
+  },
+  {
+    "type": "dependency",
+    "from": "projects/my-lib/src/lib/my-lib.service.spec.ts",
+    "to": "node_modules/@angular/core/fesm2015/testing.mjs",
+    "rule": {
+      "severity": "warn",
+      "name": "peer-deps-used"
+    }
+  },
+  {
+    "type": "dependency",
+    "from": "projects/my-lib/src/lib/my-lib.service.ts",
+    "to": "node_modules/@angular/core/fesm2015/core.mjs",
+    "rule": {
+      "severity": "warn",
+      "name": "peer-deps-used"
+    }
+  },
+  {
+    "type": "dependency",
+    "from": "projects/my-lib/src/test.ts",
+    "to": "node_modules/@angular/core/fesm2015/testing.mjs",
+    "rule": {
+      "severity": "warn",
+      "name": "peer-deps-used"
+    }
+  }
+]
